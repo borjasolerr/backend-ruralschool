@@ -8,7 +8,7 @@ const server = express();
 
 configureMiddleware(server);
 
-server.use('/api/users', usersRouter);
 server.use('/api/auth', authRouter);
+server.use('/api/users', usersRouter);
 
 module.exports = server;
