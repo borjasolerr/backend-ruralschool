@@ -11,9 +11,9 @@ exports.up = function(knex) {
 
     issues.string('username', 128).notNullable();
 
-    issues.string('notes', 128);
+    issues.string('notes', 255);
 
-    issues.integer('logDate');
+    issues.integer('logDate').notNullable();
 
     issues
       .string('status', 128)

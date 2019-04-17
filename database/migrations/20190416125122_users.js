@@ -12,6 +12,8 @@ exports.up = function(knex) {
     users.string('authLevel', 128).notNullable();
 
     users.string('organization', 128);
+
+    issues.timestamps(true, true);
   });
 };
 
