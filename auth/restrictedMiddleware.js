@@ -1,6 +1,6 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
-const secrets = require('../config/secrets.js');
+const secrets = require("../config/secrets.js");
 
 module.exports = (req, res, next) => {
   const token = req.headers.authorization;
@@ -15,6 +15,6 @@ module.exports = (req, res, next) => {
       }
     });
   } else {
-    res.status(401).json({ message: 'YOU SHALL NOT PASS!' });
+    res.status(401).json({ message: "YOU SHALL NOT PASS!" });
   }
 };

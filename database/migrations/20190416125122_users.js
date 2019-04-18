@@ -13,7 +13,7 @@ exports.up = function(knex) {
 
     users.string('organization', 128);
 
-    issues.timestamps(true, true);
+    users.timestamps(true, true);
   });
 };
 

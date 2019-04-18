@@ -9,7 +9,7 @@ const router = express.Router();
 // router.get("/", async, restricted, (req, res) => {
 router.get('/', async (req, res) => {
   try {
-    const issues = await db('issues as i').select('i.name', 'i.category', 'i.username', 'i.notes', 'i.logDate', 'i.status');
+    const issues = await db('issues as i').select('i.id', 'i.name', 'i.category', 'i.username', 'i.notes', 'i.logDate', 'i.status');
     res.status(200).json(issues);
   } catch (error) {
     console.log(error);

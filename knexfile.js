@@ -2,7 +2,7 @@ const localPgConnection = {
   host: 'localhost',
   database: 'users',
   user: 'Borja',
-  password: 'a1s2d3f4g5'
+  password: '1qa2ws'
 };
 const prodDbConnection = process.env.DATABASE_URL || localPgConnection;
 
